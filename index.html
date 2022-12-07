@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="button.css">
     <script>
-        function initialize(){
-
-        }
-        function changeImage(){
-
-        }
     </script>
-</head onload="initialize();">
+    <style>
+        h2{
+            color: red;
+            text-align: center;
+        }
+        #first{
+            color:rgb(104, 6, 6);
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
+    <h1 id="first">Welcome To My Haunted House! Danger Awaits...</h1>
+    <img src="main entrance.jpg" alt="" class="center">
+    <h2>Good luck with this maze! Which entrance do you pick brave one?</h2>
     <div class="container">
-    <button onclick="changeImage();"></button>
-    <button onclick="changeImage();"></button>
-    <button onclick="changeImage();"></button>
+    <button onclick="window.location.href='bathroom.html';">Entrance 1</button>
+    <button onclick="window.location.href='storage.html';">Entrance 2</button>
+    <button onclick="window.location.href='bedroom.html';">Entrance 3</button>
     </div>
 </body>
 </html>

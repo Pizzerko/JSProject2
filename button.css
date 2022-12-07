@@ -2,3 +2,33 @@ button{
     height:125px;
     width:250px;
 }
+body{
+    background-color: black;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+img{
+    width:700px;
+    height:500px;
+}
+p{
+    color:red;
+    text-align: center;
+}
+.interact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
