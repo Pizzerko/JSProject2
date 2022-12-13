@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="button.css">
+    <script src="items.js"></script>
 </head>
-<body>
-    <button></button>
-    <button></button>
+<body onload="initialize();">
+        <button id="restart" onclick="window.location.href='index.html';">Restart</button>
+        <h1>Kitchen</h1>
+        <img src="kitchen.jpg" alt="" class="center">
+        <div class="container">
+            <button onclick="window.location.href='computer.html'">Left</button>
+            <button onclick="window.location.href='living room.html'">Behind</button>
+        </div>
+        <p>Interactions: </p>
+        <div class="interact">
+        <button onclick="searchKey();">Search Drawers</button>
+        <div id="response"></div>
+        </div>
 </body>
 </html>

@@ -8,6 +8,10 @@ function initialize(){
     fakeHint=document.getElementById("fake");
     trapEscpae=document.getElementById("trap");
 }
+function restart(){
+    key = false;
+    axe = false;
+}
 function searchEmpty(){
     empty.innerHTML="Hm...nothing here, better look elsewhere."
 }
@@ -39,11 +43,11 @@ function searchRealChest(){
         hint.innerHTML="Avoid distractions...and the right side..."
     }
 }
-function trapDoor(){
+/*function trapDoor(){
     if(axe){
         trapEscape.innerHTML= <button onclick="window.location.href='escape.html';">Escape!</button>
     }
     else{
         trapEscape.innerHTML= "I have nothing to open this...looks like I need an axe to break this lock..."
     }
-}
+}*/
