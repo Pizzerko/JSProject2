@@ -39,3 +39,18 @@ p{
 #response{
     color:red;
 }
+#escape{
+    visibility: hidden;
+}
+#hint{
+    color:red;
+}
+#response{
+    color:red;
+}
+#response2{
+    color:red;
+}
+#nothing{
+    color:red;
+}

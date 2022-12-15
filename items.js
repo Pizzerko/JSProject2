@@ -1,5 +1,4 @@
-var key = false;
-var axe = false;
+var dust = 0;
 function initialize(){
     hint=document.getElementById("hint");
     item=document.getElementById("response");
@@ -8,46 +7,26 @@ function initialize(){
     fakeHint=document.getElementById("fake");
     trapEscpae=document.getElementById("trap");
 }
-function restart(){
-    key = false;
-    axe = false;
-}
 function searchEmpty(){
     empty.innerHTML="Hm...nothing here, better look elsewhere."
 }
-function searchKey(){
-    if(key){
-        item.innerHTML="You already have this item."
-    }
-    else{
-        item.innerHTML="You received a key!"
-        key=true;
-    }
+function searchRealHint(){
+    item2.innerHTML="You can still turn back..."
 }
-function searchAxe(){
-    if(axe){
-        item2.innerHTML="You already have this item."
-    }
-    else{
-        item2.innerHTML="You received an axe!"
-        axe=true;
-    }
+function searchDecoyHint(){
+    item.innerHTML="You're heading the right way...";
 }
 function searchDecoyChest(){
-    if(key){
-        fakeHint.innerHTML="Your path is righteous!"
-    }
+        fakeHint.innerHTML="Your path is righteous!";
 }
 function searchRealChest(){
-    if(key){
-        hint.innerHTML="Avoid distractions...and the right side..."
-    }
+        hint.innerHTML="Avoid distractions...and the right side...";
 }
-/*function trapDoor(){
-    if(axe){
-        trapEscape.innerHTML= <button onclick="window.location.href='escape.html';">Escape!</button>
+function trapDoor(){
+    if(dust >= 30){
+        document.getElementById('escape').style.visibility = 'visible';   
     }
     else{
-        trapEscape.innerHTML= "I have nothing to open this...looks like I need an axe to break this lock..."
+        dust++;
     }
-}*/
+}

@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="button.css">
     <script src="items.js"></script>
 </head>
-<body>
+<body onload="initialize();">
     <button id="restart" onclick="window.location.href='index.html';">Restart</button>
     <h1>Computer Room</h1>
     <img src="computer.jpg" alt="" class="center">
+    <p>Don't worry, the computers won't eat you. They like to randomly show creepy images though...</p>
     <div class="container">
         <button onclick="window.location.href='kitchen.html';">Door</button>
         <button onclick="window.location.href='stairs.html';">Door</button>
+    </div>
+    <p>Interactions: </p>
+    <div class="interact">
+    <button onclick="searchEmpty();">Check Under Desks</button>
+    <div id="nothing"></div>
     </div>
 </body>
 </html>

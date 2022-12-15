@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="button.css">
     <script src="items.js"></script>
 </head>
-<body>
+<body onload="initialize();">
     <button id="restart" onclick="window.location.href='index.html';">Restart</button>
     <h1>Gym</h1>
     <img src="homegym.jpg" alt="" class="center">
+    <p>Never too late for a workout right? Unless you wish to workout to death...</p>
     <div class="container">
         <button onclick="window.location.href='upstairs.html';">Left</button>
         <button onclick="window.location.href='stairs.html';">Ahead</button>
         <button onclick="window.location.href='bedroom.html';">Behind</button>
         <button onclick="window.location.href='living room.html';">Right</button>
         </div>
+        <p>Interactions: </p>
+    <div class="interact">
+        <button onclick="searchEmpty();">Look At Equipment</button>
+    <div id="nothing"></div>
+    </div>
 </body>
 </html>

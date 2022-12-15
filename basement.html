@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="button.css">
     <script src="items.js"></script>
 </head>
-<body>
+<body onload="initialize();">
     <button id="restart" onclick="window.location.href='index.html';">Restart</button>
     <h1>Basement</h1>
     <img src="basement.jpg" alt="" class="center">
+    <p>You walk down wondering: what's down here in the basement? Hopefully nothing that can eat you...</p>
     <div class="container">
     <button onclick="window.location.href='dining hall.html';">Upstairs</button>
     <button onclick="window.location.href='bedroom3.html';">Door</button>
     </div>
     <p>Interactions: </p>
     <div class="interact">
-    <button>Trap Door</button>
+    <button onclick="trapDoor();">Dust The Floor</button>
+    </div>
+    <p></p>
+    <div class="interact">
+        <button id="escape" onclick="window.location.href='trap door.html';">Open The Trap Door</button>
     </div>
     <div id="hint"></div>
+    
 </body>
 </html>
